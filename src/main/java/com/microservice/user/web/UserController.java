@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController {
-//    @Autowired
+    @Autowired
     private ProjectClient projectClient;
 
-    @Autowired
-    UserController(ProjectClient projectClient){
-        this.projectClient = projectClient;
-    }
+//    @Autowired
+//    UserController(ProjectClient projectClient){
+//        this.projectClient = projectClient;
+//    }
 
     @RequestMapping(path = "/users", method = RequestMethod.GET)
     public ResponseEntity listUsers(){
